@@ -1,0 +1,57 @@
+# config
+config/config.json
+# PyCharm-specific files
+.idea/
+
+# Files created by PyCharm
+*.iml
+*.ipr
+*.iws
+
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Pyre type checker
+.pyre/
+
+# PyInstaller
+/dist/
+/build/
+
+# pipenv
+/.venv/
+
+# virtualenv
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# Pytest
+/pytest_cache/
+
+# Python Tools for Visual Studio (PTVS)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyi
+*.pyz
+*.pyw
+*.pyo
+
+# C extensions
+*.so
+
+# PyInstaller logs
+*.log

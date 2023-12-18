@@ -1,0 +1,56 @@
+\documentclass[UTF8,AutoFakeBold,a4paper]{article} % 文档类选择
+\usepackage{ctex} % 处理中文文档和字体
+\usepackage{titlesec} % 标题格式设置
+\usepackage{fontspec} % 字体设置宏包
+\usepackage{xeCJK} % 处理中文文档和字体
+\usepackage{indentfirst} % 首段缩进
+\usepackage{geometry}
+
+%设置页边距
+\geometry{
+  top=2.8cm,
+  bottom=2.2cm,
+  left=2.8cm,
+  right=2.2cm
+}
+
+
+% 设置字体
+\setCJKfamilyfont{heiti}[BoldFont={黑体}]{宋体}
+\setmainfont{Times New Roman} % 设置英文字体为 Times New Roman
+
+
+% ======一级标题
+% (中文) 黑体, 三号, 加粗, 字距调整二号, 缩进: 居中
+% 行距: 单倍行距, 段落间距
+% 段前: 1 行
+% 段后: 1 行, 段前分页, 段中不分页
+\titleformat{\section}{\centering\heiti\bfseries\fontsize{16pt}{24pt}\selectfont}{\thesection}{1em}{}[\vspace{24pt}]
+
+% ======二级标题
+% (中文) 黑体, (默认) 宋体, 小三
+% 行距: 单倍行距, 段落间距
+% 段前: 1 行
+% 段后: 1 行, 与下段同页, 段中不分页
+\titleformat{\subsection}{\heiti\fontsize{14pt}{14pt}\selectfont}{\thesubsection}{1em}{}[\vspace{14pt}]
+
+% ======三级标题
+% (中文) 黑体, (默认) 黑体, 四号
+% 行距: 单倍行距, 与下段同页, 段中不分页
+\titleformat{\subsubsection}{\heiti\fontsize{12pt}{18pt}\selectfont}{\thesection.\arabic{subsection}.\arabic{subsubsection}}{1em}{}[]
+% \setcounter{secnumdepth}{3}
+
+% ======正文内容
+% (中文) 宋体, (默认) Times New Roman, 小四, 缩进: 左
+%  行距: 固定值 20 磅
+%  首行缩进:  2 字符
+\fontsize{12pt}{20pt}\selectfont % 设置字号和行距
+\setlength{\baselineskip}{20pt} % 设置行距为 20pt
+\setlength{\parindent}{2em} % 设置首行缩进为 2 字符
+\setlength{\parskip}{0pt} % 段落间距为 0pt
+
+\begin{document}
+
+{latex_content}
+
+\end{document}

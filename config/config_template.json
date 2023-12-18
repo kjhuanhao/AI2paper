@@ -1,0 +1,26 @@
+{
+  "Ernie": {
+    "client_id": "",
+    "client_secret": "",
+    "access_token": ""
+    },
+  "Zhipu": {
+    "api_key": ""
+  },
+  "Spark": {
+    "api_secret": "",
+    "app_id": "",
+    "api_key": ""
+  },
+  "OpenAI": {
+    "api_key": ""
+  },
+  "MinIo": {
+    "host": "",
+    "port": "",
+    "access_key": "",
+    "secret_key": "",
+    "bucket": "",
+    "tmp_path": ""
+  }
+}
